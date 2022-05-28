@@ -6,13 +6,13 @@ namespace _6_задание
     {
         static void Main(string[] args)
         {
-            Console.Write("Сколько золота у вас?");
+            Console.Write("Сколько золота у вас?  ");
             int theAMountOfGoldThePlayerHas = Convert.ToInt32(Console.ReadLine());
             int theCostOfACrystalInGold = 17;
             Console.Write("Стоимость кристалов ровна = " + theCostOfACrystalInGold + ". Какое количество кристалов вы хотите купить?  ");
             int crystalsThatWantToBuy = Convert.ToInt32(Console.ReadLine());
-            int theRemainingGoldInTheWallet = theAMountOfGoldThePlayerHas - (theCostOfACrystalInGold * crystalsThatWantToBuy);
-            Console.WriteLine("У вас теперь " + crystalsThatWantToBuy + " кристалов. Остаток золота в кошельке: " + theRemainingGoldInTheWallet + ".");
+            theAMountOfGoldThePlayerHas = theCostOfACrystalInGold * crystalsThatWantToBuy;
+            Console.WriteLine("У вас теперь " + crystalsThatWantToBuy + " кристалов. Остаток золота в кошельке: " + theAMountOfGoldThePlayerHas + ".");
         }
     }
 }
